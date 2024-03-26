@@ -16,14 +16,14 @@ public class Main {
                 .address("lol")
                 .build();
 
-        Student updateStudent = student
+        Student withNewStudent = student
                 .withNewGrade(2.4)
                 .withNewName("Sven")
                 .withNewAddress("kekw");
 
 
         System.out.println("Default " + student);
-        System.out.println("Updated Student  " + updateStudent);
+        System.out.println("Updated Student  " + withNewStudent);
 
         Course course = Course.builder()
                 .id(1)
@@ -32,13 +32,13 @@ public class Main {
                 .student(student)
                 .build();
 
-        Course neuerCourse = course
+        Course withNewCourse = course
                 .withNewName("Bio")
                 .withNewStudent(student)
                 .withNewTeacher(teacher);
 
         System.out.println("Default " + course);
-        System.out.println("Updated " + neuerCourse);
+        System.out.println("Updated " + withNewCourse);
 
     }
 }
