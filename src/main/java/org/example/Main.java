@@ -23,7 +23,7 @@ public class Main {
 
 
         System.out.println("Default " + student);
-        System.out.println("Updated Student  " + withNewStudent);
+        System.out.println("With Student  " + withNewStudent);
 
         Course course = Course.builder()
                 .id(1)
@@ -38,7 +38,7 @@ public class Main {
                 .withNewTeacher(teacher);
 
         System.out.println("Default " + course);
-        System.out.println("Updated " + withNewCourse);
+        System.out.println("With Course " + withNewCourse);
 
     }
 }
